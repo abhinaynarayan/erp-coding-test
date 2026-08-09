@@ -1,4 +1,4 @@
-```yaml
+
 name: CI/CD Pipeline
 
 on:
@@ -48,4 +48,4 @@ jobs:
       - name: Run Python tests
         run: python -m pytest
         working-directory: backend
-```
+
