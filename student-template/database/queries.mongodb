@@ -3,9 +3,6 @@
 // Collection: order_audit
 
 // TODO: Write your MongoDB query below
-db.order_audit.find({
-    // Complete this query object
-});
 
 db.order_audit.find({
   order_id: "ORD-1001",
