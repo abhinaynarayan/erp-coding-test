@@ -1,8 +1,8 @@
-# TODO: Write your AI prompt below this line
+-TODO: Write your AI prompt below this line
 
 Create a production-ready React + TypeScript component named `SupplierPerformance` for a procurement dashboard.
 
-## Goal
+-Goal
 
 Build a "Supplier Performance" widget that allows users to quickly compare suppliers based on:
 
@@ -10,17 +10,17 @@ Build a "Supplier Performance" widget that allows users to quickly compare suppl
 2. Average response time to purchase orders
 3. Overall color-coded performance status: Green, Yellow, or Red
 
-## Component and Props
+--Component and Props
 
 The component must be named and exported as:
 
-`SupplierPerformance`
+-SupplierPerformance`
 
 Use strongly typed TypeScript interfaces for the component props and supplier data.
 
 Expected props/API data structure:
 
-```ts
+ts
 interface Supplier {
   id: string;
   name: string;
@@ -33,7 +33,7 @@ interface SupplierPerformanceProps {
   loading?: boolean;
   error?: string;
 }
-```
+
 
 Example API response:
 
@@ -64,7 +64,7 @@ json
 
 Do not fetch data directly inside the component. The component should receive its data through props so it remains reusable and presentational.
 
-## UI Layout
+--UI Layout
 
 Create a clean, modern dashboard widget using a responsive table layout.
 
@@ -97,11 +97,11 @@ For the Status column:
 
 Make the component responsive so the table remains usable on smaller screens. Use semantic HTML elements such as `table`, `thead`, `tbody`, `tr`, and `th` where appropriate.
 
-## Color-Coding Logic
+--Color-Coding Logic
 
 Determine the status independently for each supplier using these rules:
 
-### Green — Good
+---Green — Good
 
 Set status to `Green` when:
 
@@ -111,7 +111,7 @@ Set status to `Green` when:
 
 Use a green badge/background, for example `#16a34a`.
 
-### Yellow — Warning
+---Yellow — Warning
 
 Set status to `Yellow` when the supplier does not meet the Green criteria but:
 
@@ -121,7 +121,7 @@ Set status to `Yellow` when the supplier does not meet the Green criteria but:
 
 Use a yellow/amber badge/background, for example `#ca8a04`.
 
-### Red — Poor
+---Red — Poor
 
 Set status to `Red` for all remaining suppliers.
 
@@ -129,7 +129,7 @@ Use a red badge/background, for example `#dc2626`.
 
 Make the thresholds explicit in the code rather than using unexplained magic numbers. Create a small helper function such as `getSupplierStatus()` if appropriate.
 
-## Visual Design
+-- Visual Design
 
 Use a professional enterprise-dashboard style:
 
@@ -144,7 +144,7 @@ Use a professional enterprise-dashboard style:
 
 If the project already uses a UI library or styling system, follow the existing project's conventions rather than introducing a new dependency.
 
-## States
+-- States
 
 Handle these states gracefully:
 
@@ -155,7 +155,7 @@ Handle these states gracefully:
 
 Do not crash if optional props are omitted.
 
-## Accessibility
+-- Accessibility
 
 Follow good accessibility practices:
 
@@ -166,7 +166,7 @@ Follow good accessibility practices:
 * Do not rely solely on red/green color to communicate performance.
 * Use accessible labels where progress bars or other visual indicators are used.
 
-## Implementation Requirements
+-- Implementation Requirements
 
 Generate the complete component code, not pseudocode.
 
@@ -183,4 +183,4 @@ The final answer should include:
 3. Styling required for the component, using the project's existing styling approach where possible.
 4. A short example showing how the component can be rendered with sample supplier data.
 
-## The generated code should be ready to integrate into an existing React + TypeScript application with minimal modification.
+-- The generated code should be ready to integrate into an existing React + TypeScript application with minimal modification.
