@@ -1,4 +1,4 @@
-```python
+
 from flask import Flask, jsonify
 import psycopg2
 from psycopg2.extras import RealDictCursor
@@ -40,4 +40,4 @@ def get_alerts():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
-```
+
